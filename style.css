@@ -168,3 +168,11 @@
   letter-spacing: -0.025rem;
   text-transform: uppercase;
 }
+.Major {
+  font-size: 1rem;
+  font-family: Open Sans;
+  font-weight: 700;
+  line-height: 1.625;
+  text-transform: none;
+  text-decoration: none;
+}

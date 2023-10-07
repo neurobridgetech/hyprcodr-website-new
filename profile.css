@@ -5,7 +5,7 @@
 .primary-pink-button-button {
   color: var(--dl-color-gray-white);
   outline: none;
-  background: linear-gradient( 310deg ,#7928ca,#ff0080);
+  background: linear-gradient( 310deg ,#894cff ,#f57832);
   box-shadow: 0 4px 7px -1px rgb(0 0 0 / 11%), 0 2px 4px -1px rgb(0 0 0 / 7%);
   transition: all .15s ease-in;
   padding-top: var(--dl-space-space-triplequarterunit);
@@ -243,7 +243,7 @@
   position: relative;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(310deg,#141727,#3a416f);
+  background-image: linear-gradient(to bottom,#0b0d19 30%,#894cF0);
 }
 .footer-container {
   color: var(--dl-color-gray-white);
@@ -259,9 +259,16 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.footer-text {
-  font-weight: 700;
-  margin-bottom: var(--dl-space-space-halfunit);
+.footer-image {
+  width: 200px;
+  object-fit: cover;
+  border-color: var(--dl-color-secondary-400);
+  border-style: hidden;
+  border-width: 1px;
+  border-radius: var(--dl-radius-radius-radius1);
+}
+.footer-link {
+  text-decoration: none;
 }
 .footer-container2 {
   display: flex;
@@ -273,105 +280,82 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.footer-text02 {
+.footer-text {
   font-weight: 700;
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.footer-text03 {
+.footer-link1 {
   color: var(--dl-color-gray-800);
   transition: 0.3s;
   margin-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
 }
-.footer-text03:hover {
+.footer-link1:hover {
   color: var(--dl-color-gray-white);
 }
-.footer-text04 {
+.footer-link2 {
   color: var(--dl-color-gray-800);
   transition: 0.3s;
   margin-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
 }
-.footer-text04:hover {
+.footer-link2:hover {
   color: var(--dl-color-gray-white);
 }
-.footer-text05 {
-  color: var(--dl-color-gray-800);
-  transition: 0.3s;
-  margin-bottom: var(--dl-space-space-halfunit);
-}
-.footer-text05:hover {
+.footer-text1:hover {
   color: var(--dl-color-gray-white);
 }
 .footer-container4 {
   flex: 0 0 auto;
   display: flex;
   align-items: flex-start;
-  margin-left: var(--dl-space-space-sixunits);
+  margin-left: 40px;
   flex-direction: column;
 }
-.footer-text06 {
+.footer-text3 {
   font-weight: 700;
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.footer-text07 {
+.footer-link3 {
   color: var(--dl-color-gray-800);
   transition: 0.3s;
   margin-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
 }
-.footer-text07:hover {
-  color: var(--dl-color-gray-white);
-}
-.footer-text08 {
-  color: var(--dl-color-gray-800);
-  transition: 0.3s;
-  margin-bottom: var(--dl-space-space-halfunit);
-}
-.footer-text08:hover {
-  color: var(--dl-color-gray-white);
-}
-.footer-text09 {
-  color: var(--dl-color-gray-800);
-  transition: 0.3s;
-  margin-bottom: var(--dl-space-space-halfunit);
-}
-.footer-text09:hover {
+.footer-link3:hover {
   color: var(--dl-color-gray-white);
 }
 .footer-container5 {
   flex: 0 0 auto;
+  width: 74px;
   display: flex;
   align-items: flex-start;
-  margin-left: var(--dl-space-space-sixunits);
+  margin-left: 40px;
   flex-direction: column;
 }
-.footer-text10 {
+.footer-text4 {
   font-weight: 700;
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.footer-text11 {
+.footer-link4 {
   color: var(--dl-color-gray-800);
   transition: 0.3s;
   margin-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
 }
-.footer-text11:hover {
+.footer-link4:hover {
   color: var(--dl-color-gray-white);
 }
-.footer-text12 {
+.footer-link5 {
   color: var(--dl-color-gray-800);
   transition: 0.3s;
   margin-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
 }
-.footer-text12:hover {
+.footer-link5:hover {
   color: var(--dl-color-gray-white);
 }
-.footer-text13 {
-  color: var(--dl-color-gray-800);
-  transition: 0.3s;
-  margin-bottom: var(--dl-space-space-halfunit);
-}
-.footer-text13:hover {
-  color: var(--dl-color-gray-white);
-}
-.footer-image {
+.footer-image1 {
   top: 0px;
   left: auto;
   right: 0px;
@@ -380,6 +364,10 @@
   opacity: 0.7;
   position: absolute;
   object-fit: cover;
+  background-color: linear-gradient(180deg, #f57832, #894cff);
+}
+.footer-root-class-name {
+  background-image: linear-gradient(to bottom,#894cF0 ,#0b0d19 40%);
 }
 @media(max-width: 991px) {
   .footer-container {

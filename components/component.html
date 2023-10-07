@@ -44,11 +44,19 @@
   <body>
     <link rel="stylesheet" href="../style.css" />
     <div>
-      <link href="./primary-pink-button.css" rel="stylesheet" />
-      <div class="primary-pink-button-container">
-        <button class="primary-pink-button-button button ButtonSmall">
-          <span>Early Access</span>
-        </button>
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/@lottiefiles/lottie-player@1.6.0/dist/lottie-player.js"
+      ></script>
+      <link href="./component.css" rel="stylesheet" />
+      <div class="component-container">
+        <lottie-player
+          src="https://presentation-website-assets.teleporthq.io/features/lottie.json"
+          autoplay=""
+          speed="1"
+          background="transparent"
+          class="component-lottie-node"
+        ></lottie-player>
       </div>
     </div>
     <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
