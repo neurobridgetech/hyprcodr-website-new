@@ -244,7 +244,7 @@
   position: relative;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(to bottom,#0b0d19 30%,#894cF0);
+  background-image: linear-gradient(to bottom,#0b0d19 30%,#000);
 }
 .footer-container {
   color: var(--dl-color-gray-white);
@@ -368,7 +368,7 @@
   background-color: linear-gradient(180deg, #f57832, #894cff);
 }
 .footer-root-class-name {
-  background-image: linear-gradient(to bottom,#894cF0 ,#0b0d19 40%);
+  background-image: linear-gradient(to bottom,#0b0d19 ,#0b0d19 40%);
 }
 @media(max-width: 991px) {
   .footer-container {

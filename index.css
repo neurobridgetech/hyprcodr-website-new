@@ -735,7 +735,7 @@ td {
 }
 
 th {
-  background: linear-gradient(to bottom, #f77932, #894cff);
+ /*  background: linear-gradient(to bottom, #f77932, #894cff); */
   color: #000;
 }
 
@@ -1814,7 +1814,16 @@ td {
 }
 
 .HeadingTwo {
-  font-size: 1.875rem;
+  font-size: 2.5rem;
+  font-family: Open Sans;
+  font-weight: 700;
+  line-height: 1.375;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.Heading2 {
+  font-size: 3rem;
   font-family: Open Sans;
   font-weight: 700;
   line-height: 1.375;
