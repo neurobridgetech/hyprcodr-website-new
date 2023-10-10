@@ -1,535 +1,594 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>HyprCodr</title>
-    <meta property="og:title" content="HyprCodr" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
 
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Open Sans;
-        font-size: 1rem;
-      }
+<head>
+  <title>HyprCodr</title>
+  <meta property="og:title" content="HyprCodr" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
 
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.625;
-        color: var(--dl-color-secondary-400);
-        background-color: var(--dl-color-gray-white);
+  <style data-tag="reset-style-sheet">
+    html {
+      line-height: 1.15;
+    }
 
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
-      data-tag="font"
-    />
-    <style>
-      html * {
-          -webkit-font-smoothing: antialiased;
-      }
-      input::placeholder, textarea::placeholder {
-         color: #d2d6da;
-      }
-    </style>
-  </head>
-  <body>
-    <link href="./index.css" rel="stylesheet" />
-    <div>
-      <div class="home-container">
-        <div data-role="Header" class="header-header">
-          <nav class="header-nav">
-            <div class="header-container">
-              <a href="index.html" class="header-navlink Large">HyprCodr</a>
-              <div class="header-menu">
-                <a href="index.html" class="header-navlink1 Large">Home</a>
-                <a href="profile.html" class="header-navlink2 Large">
-                  Features
-                </a>
-                <a href="index.html" class="header-navlink3">
-                  <span class="Large header-text">Contact Us</span>
-                  <br />
-                </a>
-              </div>
-              <div class="header-container1">
-                <div class="header-container2">
-                  <div class="primary-pink-button-container">
-                    <button
-                      class="primary-pink-button-button button ButtonSmall"
-                    >
-                      <span>buy now</span>
-                    </button>
-                  </div>
-                </div>
-                <div data-role="BurgerMenu" class="header-burger-menu">
-                  <svg viewBox="0 0 1024 1024" class="header-icon">
-                    <path
-                      d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </nav>
-          <div data-role="MobileMenu" class="header-mobile-menu">
-            <div class="header-top">
-              <a href="index.html" class="header-navlink4 Large">
-                Soft UI Design System
+    body {
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+    }
+
+    p,
+    li,
+    ul,
+    pre,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    figure,
+    blockquote,
+    figcaption {
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      background-color: transparent;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focus,
+    [type="button"]:-moz-focus,
+    [type="reset"]:-moz-focus,
+    [type="submit"]:-moz-focus {
+      outline: 1px dotted ButtonText;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    input {
+      padding: 2px 4px;
+    }
+
+    img {
+      display: block;
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+  </style>
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Open Sans;
+      font-size: 1rem;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.625;
+      color: var(--dl-color-secondary-400);
+      background-color: var(--dl-color-gray-white);
+
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+    data-tag="font" />
+  <style>
+    html * {
+      -webkit-font-smoothing: antialiased;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #d2d6da;
+    }
+  </style>
+</head>
+
+<body>
+  <link href="./index.css" rel="stylesheet" />
+  <div>
+    <div class="home-container">
+      <div data-role="Header" class="header-header">
+        <nav class="header-nav">
+          <div class="header-container">
+            <a href="index.html" class="header-navlink Large"><img src="public/hyprcodr%20logo%20nobg-200h.png"
+                alt="image" style="height:5vh" /></a>
+            <div class="header-menu">
+              <a href="index.html" class="header-navlink1 Large">Home</a>
+              <a href="profile.html" class="header-navlink2 Large">Features</a>
+              <a href="index.html" class="header-navlink3 Large">Contact us</a>
               </a>
-              <div data-role="CloseMobileMenu" class="header-close-menu">
-                <svg viewBox="0 0 1024 1024" class="header-icon2">
-                  <path
-                    d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                  ></path>
+            </div>
+            <div class="header-container1">
+              <div class="header-container2">
+                <div class="primary-pink-button-container">
+                  <button class="primary-pink-button-button button ButtonSmall">
+                    <span>Early Access</span>
+                  </button>
+                </div>
+              </div>
+              <div data-role="BurgerMenu" class="header-burger-menu">
+                <svg viewBox="0 0 1024 1024" class="header-icon">
+                  <path d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"></path>
                 </svg>
               </div>
             </div>
-            <div class="header-mid">
-              <div class="header-menu1">
-                <a href="index.html" class="header-navlink5 Large">Home</a>
-                <a href="profile.html" class="header-navlink6 Large">Profile</a>
-                <a href="coming-soon.html" class="header-navlink7 Large">
-                  Coming Soon
-                </a>
-              </div>
+          </div>
+        </nav>
+        <div data-role="MobileMenu" class="header-mobile-menu">
+          <div class="header-top">
+            <a href="index.html" class="header-navlink4 Large">
+              HyprCodr
+            </a>
+            <div data-role="CloseMobileMenu" class="header-close-menu">
+              <svg viewBox="0 0 1024 1024" class="header-icon2">
+                <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
+                </path>
+              </svg>
             </div>
-            <div class="header-bot">
-              <div class="primary-pink-button-container">
-                <button class="primary-pink-button-button button ButtonSmall">
-                  <span>buy now</span>
+          </div>
+          <div class="header-mid">
+            <div class="header-menu1">
+              <a href="index.html" class="header-navlink5 Large">Home</a>
+              <a href="profile.html" class="header-navlink6 Large">Profile</a>
+              <a href="coming-soon.html" class="header-navlink7 Large">
+                Contact us
+              </a>
+            </div>
+          </div>
+          <div class="header-bot">
+            <div class="primary-pink-button-container">
+              <button class="primary-pink-button-button button ButtonSmall">
+                <span>Early Access</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-hero">
+        <!-- <div class="animecard-bg"></div>
+				<div class="animecard-particles-container">
+					<canvas id="animecard-particles"></canvas>
+				</div> -->
+        <div class="home-container01">
+          <div class="home-card">
+            <h1 class="home-text">HyprCodr</h1>
+            <h1 class="home-text01 HeadingOne">Your AI Assistant</h1>
+            <span class="home-text02">
+              <span>
+                Unlock the limitless potential of LLM capabilities with
+                HyprCodr right within your coding environment
+              </span>
+            </span>
+            <div class="home-container02">
+              <div class="home-container03">
+                <div class="primary-pink-button-container">
+                  <button class="primary-pink-button-button button ButtonSmall">
+                    <span>Early Access</span>
+                  </button>
+                </div>
+              </div>
+              <div class="outline-gray-button-container">
+                <button class="outline-gray-button-button button ButtonSmall">
+                  <span>Contact Us</span>
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="home-hero">
-          <div class="home-container01">
-            <div class="home-card">
-              <h1 class="home-text">HyprCodr</h1>
-              <h1 class="home-text01 HeadingOne">Your AI Assistant</h1>
-              <span class="home-text02">
-                <br />
-                <br />
+      </div>
+      <img alt="image" src="public/hero-bg-top.svg" class="home-image" />
+
+      <section class="home-features">
+        <div class="feature-card1-container feature-card1-root-class-name">
+          <img alt="image" src="public/hourglass-200h.gif" class="feature-card1-image" />
+          <h5 class="feature-card1-text HeadingThree"><span>20+</span></h5>
+          <span class="feature-card1-text1">
+            <span>Hours Per Month Saved</span>
+          </span>
+        </div>
+        <div class="feature-card-container">
+          <img alt="image" src="public/person1.svg" class="feature-card-image" />
+          <h5 class="feature-card-text HeadingThree"><span>10000+</span></h5>
+          <span class="feature-card-text1">
+            <span>Lines Of Code Generated</span>
+          </span>
+        </div>
+        <div class="feature-card-container">
+          <img alt="image" src="public/rocket1.svg" class="feature-card-image" />
+          <h5 class="feature-card-text HeadingThree"><span>3X</span></h5>
+          <span class="feature-card-text1">
+            <span>Times Enhanced Efficiency</span>
+          </span>
+        </div>
+        <div class="feature-card-container">
+          <img alt="image" src="public/errors.svg" class="feature-card-image" />
+          <h5 class="feature-card-text HeadingThree"><span>5X</span></h5>
+          <span class="feature-card-text1">
+            <span>Times Error Reduction</span>
+          </span>
+        </div>
+      </section>
+      <section class="home-container04">
+        <div class="home-container05">
+          <div class="home-container06">
+            <svg viewBox="0 0 1024 1024" class="home-icon">
+              <path
+                d="M363.722 722.052l41.298-57.816-45.254-45.256-57.818 41.296c-10.722-5.994-22.204-10.774-34.266-14.192l-11.682-70.084h-64l-11.68 70.086c-12.062 3.418-23.544 8.198-34.266 14.192l-57.818-41.298-45.256 45.256 41.298 57.816c-5.994 10.72-10.774 22.206-14.192 34.266l-70.086 11.682v64l70.086 11.682c3.418 12.060 8.198 23.544 14.192 34.266l-41.298 57.816 45.254 45.256 57.818-41.296c10.722 5.994 22.204 10.774 34.266 14.192l11.682 70.084h64l11.68-70.086c12.062-3.418 23.544-8.198 34.266-14.192l57.818 41.296 45.254-45.256-41.298-57.816c5.994-10.72 10.774-22.206 14.192-34.266l70.088-11.68v-64l-70.086-11.682c-3.418-12.060-8.198-23.544-14.192-34.266zM224 864c-35.348 0-64-28.654-64-64s28.652-64 64-64 64 28.654 64 64-28.652 64-64 64zM1024 384v-64l-67.382-12.25c-1.242-8.046-2.832-15.978-4.724-23.79l57.558-37.1-24.492-59.128-66.944 14.468c-4.214-6.91-8.726-13.62-13.492-20.13l39.006-56.342-45.256-45.254-56.342 39.006c-6.512-4.766-13.22-9.276-20.13-13.494l14.468-66.944-59.128-24.494-37.1 57.558c-7.812-1.892-15.744-3.482-23.79-4.724l-12.252-67.382h-64l-12.252 67.382c-8.046 1.242-15.976 2.832-23.79 4.724l-37.098-57.558-59.128 24.492 14.468 66.944c-6.91 4.216-13.62 8.728-20.13 13.494l-56.342-39.006-45.254 45.254 39.006 56.342c-4.766 6.51-9.278 13.22-13.494 20.13l-66.944-14.468-24.492 59.128 57.558 37.1c-1.892 7.812-3.482 15.742-4.724 23.79l-67.384 12.252v64l67.382 12.25c1.242 8.046 2.832 15.978 4.724 23.79l-57.558 37.1 24.492 59.128 66.944-14.468c4.216 6.91 8.728 13.618 13.494 20.13l-39.006 56.342 45.254 45.256 56.342-39.006c6.51 4.766 13.22 9.276 20.13 13.492l-14.468 66.944 59.128 24.492 37.102-57.558c7.81 1.892 15.742 3.482 23.788 4.724l12.252 67.384h64l12.252-67.382c8.044-1.242 15.976-2.832 23.79-4.724l37.1 57.558 59.128-24.492-14.468-66.944c6.91-4.216 13.62-8.726 20.13-13.492l56.342 39.006 45.256-45.256-39.006-56.342c4.766-6.512 9.276-13.22 13.492-20.13l66.944 14.468 24.492-59.13-57.558-37.1c1.892-7.812 3.482-15.742 4.724-23.79l67.382-12.25zM672 491.2c-76.878 0-139.2-62.322-139.2-139.2s62.32-139.2 139.2-139.2 139.2 62.322 139.2 139.2c0 76.878-62.32 139.2-139.2 139.2z">
+              </path>
+            </svg>
+          </div>
+          <h2 class="home-text06 HeadingTwo">
+            <span class="home-text07">Features</span>
+          </h2>
+          <span class="home-text08">
+            <span class="home-text09">
+              Discover How HyprCodr Elevates Your Coding
+            </span>
+          </span>
+        </div>
+        <div class="home-container07">
+          <div class="home-container08">
+            <div class="home-container09">
+              <!-- <video src="public/gen1 try.mp4" height="720px" width="900px"></video> -->
+            </div>
+          </div>
+          <div class="home-container10">
+            <h3 class="home-text10 HeadingTwo">
+              <span>Natural Language Coding</span>
+              <br />
+            </h3>
+            <div class="home-container11">
+              <h4 class="home-text13">
+                <span class="HeadingThree">1.</span>
                 <span>
-                  Unlock the limitless potential of LLM capabilities with
-                  HyprCodr right within your coding environment
+                  Leverage the power of natural language to effortlessly ask
+                  coding questions, request different perspectives, and obtain
+                  personalized code solutions.
                 </span>
-              </span>
-              <div class="home-container02">
-                <div class="home-container03">
-                  <div class="primary-pink-button-container">
-                    <button
-                      class="primary-pink-button-button button ButtonSmall"
-                    >
-                      <span>contact us</span>
-                    </button>
-                  </div>
-                </div>
-                <div class="outline-gray-button-container">
-                  <button class="outline-gray-button-button button ButtonSmall">
-                    <span>read more</span>
-                  </button>
-                </div>
+              </h4>
+            </div>
+            <div class="home-container12">
+              <h4 class="home-text16">
+                <span class="HeadingThree">2.</span>
+                <span>
+                  Select specific lines of code or files across your workspace
+                  to generate code with enhanced results.
+                </span>
+              </h4>
+            </div>
+            <div class="home-container13">
+              <h4 class="home-text19">
+                <span class="HeadingThree">3.</span>
+                <span>
+                  Generate entire files from scratch simply by describing your
+                  requirements to HyprCodr, making coding from the ground up a
+                  breeze.
+                </span>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="home-divider"></div>
+        <div class="home-container14">
+          <div class="home-container15">
+            <h3 class="home-text22">Enhanced Unit Testing and Debugging</h3>
+            <div class="home-container16">
+              <h4 class="home-text23">
+                <span class="HeadingThree">1.</span>
+                <span>
+                  Elevate code reliability with meticulous function testing,
+                  ensuring a dependable codebase.
+                </span>
+              </h4>
+            </div>
+            <div class="home-container17">
+              <h4 class="home-text26">
+                <span class="HeadingThree">2.</span>
+                <span>
+                  Access error solutions directly from Google and Stack
+                  Overflow and collaborate seamlessly with HyprCodr for
+                  real-time debugging expertise.
+                </span>
+              </h4>
+            </div>
+            <div class="home-container18">
+              <h4 class="home-text29">
+                <span class="HeadingThree">3.</span>
+                <span>
+                  Provide URL links to add context and enhance the debugging
+                  process further.
+                </span>
+              </h4>
+            </div>
+          </div>
+          <div class="home-container19">
+            <video src="public/gen1 try.mp4"></video>
+            <div class="home-container20"></div>
+          </div>
+        </div>
+        <div class="home-divider1"></div>
+        <div class="home-container21">
+          <div class="home-container22">
+            <div class="home-container23"></div>
+          </div>
+          <div class="home-container24">
+            <h3 class="home-text32">Comprehensive Code Documentation</h3>
+            <div class="home-container25">
+              <h4 class="home-text33">
+                <span class="HeadingThree">1.</span>
+                <span>
+                  Automatically generate structured comments for a
+                  well-documented codebase, enhancing code clarity and
+                  maintainability.
+                </span>
+                <br />
+              </h4>
+            </div>
+            <div class="home-container26">
+              <h4 class="home-text37">
+                <span class="HeadingThree">2.</span>
+                <span>
+                  Simplify documentation tasks with HyprCodr's automatic
+                  README file generation.
+                </span>
+                <br />
+              </h4>
+            </div>
+            <div class="home-container27">
+              <h4 class="home-text41">
+                <span class="HeadingThree">3.</span>
+                <span>
+                  Gain invaluable insights into your code's functionality with
+                  line-by-line explanations.
+                </span>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="home-divider2"></div>
+        <div class="home-container28">
+          <div class="home-container29">
+            <h3 class="home-text44">
+              Streamlined Code Editing and Quality Enhancement
+            </h3>
+            <div class="home-container30">
+              <h4 class="home-text45">
+                <span class="HeadingThree">1.</span>
+                <span>
+                  Save time and eliminate the need to switch between windows
+                  by accessing extensive context directly within VSCode.
+                </span>
+              </h4>
+            </div>
+            <div class="home-container31">
+              <h4 class="home-text48">
+                <span class="HeadingThree">2.</span>
+                <span>
+                  Select text and let HyprCodr improve code quality by adding
+                  comments, completing shortcuts, and helping you catch and
+                  rectify mistakes swiftly.
+                </span>
+              </h4>
+            </div>
+            <div class="home-container32">
+              <h4 class="home-text51">
+                <span class="HeadingThree">3.</span>
+                <span>
+                  Accelerate your coding workflow and enhance code quality
+                  through HyprCodr's smart editing features.
+                </span>
+              </h4>
+            </div>
+          </div>
+          <div class="home-container33">
+            <div class="home-container34"></div>
+          </div>
+        </div>
+      </section>
+      <section class="home-testimonials">
+        <div class="home-container35">
+          <div class="home-container36">
+            <div class="home-container37">
+              <h2 class="home-text54 HeadingOne">Work with us</h2>
+              <p class="home-text55 Lead">
+                <span class="home-text56">
+                  Whatever your qualification is - we got you!
+                </span>
+              </p>
+              <p class="home-text57 Body">
+                <span class="home-text58">
+                  "Take up one idea. Make that one idea your life - think of
+                  it, dream of it, live on that idea. Let the brain, muscles,
+                  nerves, every part of your body, be full of that idea, and
+                  just leave every other idea alone. This is the way to
+                  success. A single rose can be my garden... a single friend,
+                  my world."
+                </span>
+              </p>
+              <p class="home-text59">Mark Jojansen</p>
+              <p class="home-text60 Small">Project manager, Atlassian</p>
+              <div class="home-container38">
+                <img alt="image" src="public/team-4-200h.jpg" class="home-image1" />
+                <div class="home-container39"></div>
+                <img alt="image" src="public/team-3-200h.jpg" class="home-image2" />
+                <div class="home-container40"></div>
+                <img alt="image" src="public/team-2-200h.jpg" class="home-image3" />
               </div>
             </div>
           </div>
         </div>
-        <img
-          alt="image"
-          src="public/pexels-alexander-ant-4585185-1500h.jpg"
-          class="home-image"
-        />
-        <section class="home-features">
-          <div class="feature-card1-container feature-card1-root-class-name">
-            <img
-              alt="image"
-              src="public/hourglass-200h.gif"
-              class="feature-card1-image"
-            />
-            <h5 class="feature-card1-text HeadingThree"><span>20+</span></h5>
-            <span class="feature-card1-text1">
-              <span>Hours Per Month Saved</span>
+        <img alt="image" src="public/waves-white.svg" class="home-image4" />
+      </section>
+      <link href="./profile.css" rel="stylesheet" />
+      <div class="profile-contact">
+        <div class="profile-container09">
+          <div class="profile-form">
+            <h2 class="profile-text18 HeadingOne"><span>Say Hi!</span></h2>
+            <span class="profile-text20 Lead">
+              We'd like to talk with you.
             </span>
-          </div>
-          <div class="feature-card-container">
-            <img
-              alt="image"
-              src="public/person1.svg"
-              class="feature-card-image"
-            />
-            <h5 class="feature-card-text HeadingThree"><span>10000+</span></h5>
-            <span class="feature-card-text1">
-              <span>Lines Of Code Generated</span>
-            </span>
-          </div>
-          <div class="feature-card-container">
-            <img
-              alt="image"
-              src="public/rocket1.svg"
-              class="feature-card-image"
-            />
-            <h5 class="feature-card-text HeadingThree"><span>3X</span></h5>
-            <span class="feature-card-text1">
-              <span>Times Enhanced Efficiency</span>
-            </span>
-          </div>
-          <div class="feature-card-container">
-            <img
-              alt="image"
-              src="public/errors.svg"
-              class="feature-card-image"
-            />
-            <h5 class="feature-card-text HeadingThree"><span>5X</span></h5>
-            <span class="feature-card-text1">
-              <span>Times Error Reduction</span>
-            </span>
-          </div>
-        </section>
-        <section class="home-container04">
-          <div class="home-container05">
-            <div class="home-container06">
-              <svg viewBox="0 0 1024 1024" class="home-icon">
-                <path
-                  d="M363.722 722.052l41.298-57.816-45.254-45.256-57.818 41.296c-10.722-5.994-22.204-10.774-34.266-14.192l-11.682-70.084h-64l-11.68 70.086c-12.062 3.418-23.544 8.198-34.266 14.192l-57.818-41.298-45.256 45.256 41.298 57.816c-5.994 10.72-10.774 22.206-14.192 34.266l-70.086 11.682v64l70.086 11.682c3.418 12.060 8.198 23.544 14.192 34.266l-41.298 57.816 45.254 45.256 57.818-41.296c10.722 5.994 22.204 10.774 34.266 14.192l11.682 70.084h64l11.68-70.086c12.062-3.418 23.544-8.198 34.266-14.192l57.818 41.296 45.254-45.256-41.298-57.816c5.994-10.72 10.774-22.206 14.192-34.266l70.088-11.68v-64l-70.086-11.682c-3.418-12.060-8.198-23.544-14.192-34.266zM224 864c-35.348 0-64-28.654-64-64s28.652-64 64-64 64 28.654 64 64-28.652 64-64 64zM1024 384v-64l-67.382-12.25c-1.242-8.046-2.832-15.978-4.724-23.79l57.558-37.1-24.492-59.128-66.944 14.468c-4.214-6.91-8.726-13.62-13.492-20.13l39.006-56.342-45.256-45.254-56.342 39.006c-6.512-4.766-13.22-9.276-20.13-13.494l14.468-66.944-59.128-24.494-37.1 57.558c-7.812-1.892-15.744-3.482-23.79-4.724l-12.252-67.382h-64l-12.252 67.382c-8.046 1.242-15.976 2.832-23.79 4.724l-37.098-57.558-59.128 24.492 14.468 66.944c-6.91 4.216-13.62 8.728-20.13 13.494l-56.342-39.006-45.254 45.254 39.006 56.342c-4.766 6.51-9.278 13.22-13.494 20.13l-66.944-14.468-24.492 59.128 57.558 37.1c-1.892 7.812-3.482 15.742-4.724 23.79l-67.384 12.252v64l67.382 12.25c1.242 8.046 2.832 15.978 4.724 23.79l-57.558 37.1 24.492 59.128 66.944-14.468c4.216 6.91 8.728 13.618 13.494 20.13l-39.006 56.342 45.254 45.256 56.342-39.006c6.51 4.766 13.22 9.276 20.13 13.492l-14.468 66.944 59.128 24.492 37.102-57.558c7.81 1.892 15.742 3.482 23.788 4.724l12.252 67.384h64l12.252-67.382c8.044-1.242 15.976-2.832 23.79-4.724l37.1 57.558 59.128-24.492-14.468-66.944c6.91-4.216 13.62-8.726 20.13-13.492l56.342 39.006 45.256-45.256-39.006-56.342c4.766-6.512 9.276-13.22 13.492-20.13l66.944 14.468 24.492-59.13-57.558-37.1c1.892-7.812 3.482-15.742 4.724-23.79l67.382-12.25zM672 491.2c-76.878 0-139.2-62.322-139.2-139.2s62.32-139.2 139.2-139.2 139.2 62.322 139.2 139.2c0 76.878-62.32 139.2-139.2 139.2z"
-                ></path>
-              </svg>
+            <form class="profile-form1">
+              <label class="profile-text21 Label">My Name is</label>
+              <input type="text" placeholder="Full Name" class="profile-textinput Small input" />
+              <label class="profile-text22 Label">My Email Id is</label>
+              <input type="email" placeholder="example@example.com" class="profile-textinput1 Small input" />
+              <label class="profile-text23 Label">Your message</label>
+              <textarea rows="8" placeholder="I want to say that..." class="profile-textarea textarea Small"></textarea>
+              <div class="primary-blue-button-container">
+                <button class="primary-blue-button-button button ButtonSmall">
+                  <span style="color: white;">send message</span>
+                </button>
+              </div>
+            </form>
+            <div class="profile-container10">
+              <div class="profile-container11">
+
+              </div>
             </div>
-            <h2 class="home-text06 HeadingTwo">
-              <span class="home-text07">Beware The Components</span>
-            </h2>
-            <span class="home-text08">
-              <span class="home-text09">
-                We’re constantly trying to express ourselves and actualize our
-                dreams. Don't stop.
+          </div>
+          <div class="profile-info">
+            <div class="profile-container12">
+              <h3 class="HeadingTwo">
+                <span>Contact</span>
+                <span>Information</span>
+              </h3>
+              <span class="profile-text27">
+                Fill up the form and our Team will get back to you within 24
+                hours.
               </span>
-            </span>
-          </div>
-          <div class="home-container07">
-            <div class="home-container08">
-              <div class="home-container09"></div>
-            </div>
-            <div class="home-container10">
-              <h3 class="home-text10 HeadingTwo">
-                <span>Natural Language Coding</span>
-                <br />
-              </h3>
-              <div class="home-container11">
-                <h4 class="home-text13">
-                  <span class="HeadingThree">1.</span>
-                  <span>
-                    Leverage the power of natural language to effortlessly ask
-                    coding questions, request different perspectives, and obtain
-                    personalized code solutions.
+              <div class="profile-container13">
+                <div class="profile-container14">
+                  <svg viewBox="0 0 1024 1024" class="profile-icon02">
+                    <path
+                      d="M742 460l-94-94q-18-18-10-44 24-72 24-152 0-18 12-30t30-12h150q18 0 30 12t12 30q0 300-213 513t-513 213q-18 0-30-12t-12-30v-150q0-18 12-30t30-12q80 0 152-24 24-10 44 10l94 94q186-96 282-282z">
+                    </path>
+                  </svg>
+                  <a href="tel:+91 9302289000" class="profile-link Small">
+                    (+91) 9302289000
+                  </a>
+                </div>
+                <div class="profile-container15">
+                  <svg viewBox="0 0 1024 1024" class="profile-icon04">
+                    <path
+                      d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z">
+                    </path>
+                  </svg>
+                  <a href="mailto:hyprcodr@neurobridge.tech?subject=" class="profile-link1 Small">
+                    hyprcodr@neurobridge.tech
+                  </a>
+                </div>
+                <div class="profile-container16">
+                  <svg viewBox="0 0 1024 1024" class="profile-icon06">
+                    <path
+                      d="M512 490q44 0 75-31t31-75-31-75-75-31-75 31-31 75 31 75 75 31zM512 86q124 0 211 87t87 211q0 62-31 142t-75 150-87 131-73 97l-32 34q-12-14-32-37t-72-92-91-134-71-147-32-144q0-124 87-211t211-87z">
+                    </path>
+                  </svg>
+                  <span class="profile-text28 Small">
+                    Mumbai, India - 400072
                   </span>
-                </h4>
-              </div>
-              <div class="home-container12">
-                <h4 class="home-text16">
-                  <span class="HeadingThree">2.</span>
-                  <span>
-                    Select specific lines of code or files across your workspace
-                    to generate code with enhanced results.
-                  </span>
-                </h4>
-              </div>
-              <div class="home-container13">
-                <h4 class="home-text19">
-                  <span class="HeadingThree">3.</span>
-                  <span>
-                    Generate entire files from scratch simply by describing your
-                    requirements to HyprCodr, making coding from the ground up a
-                    breeze.
-                  </span>
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div class="home-divider"></div>
-          <div class="home-container14">
-            <div class="home-container15">
-              <h3 class="home-text22">Enhanced Unit Testing and Debugging</h3>
-              <div class="home-container16">
-                <h4 class="home-text23">
-                  <span class="HeadingThree">1.</span>
-                  <span>
-                    Elevate code reliability with meticulous function testing,
-                    ensuring a dependable codebase.
-                  </span>
-                </h4>
-              </div>
-              <div class="home-container17">
-                <h4 class="home-text26">
-                  <span class="HeadingThree">2.</span>
-                  <span>
-                    Access error solutions directly from Google and Stack
-                    Overflow and collaborate seamlessly with HyprCodr for
-                    real-time debugging expertise.
-                  </span>
-                </h4>
-              </div>
-              <div class="home-container18">
-                <h4 class="home-text29">
-                  <span class="HeadingThree">3.</span>
-                  <span>
-                    Provide URL links to add context and enhance the debugging
-                    process further.
-                  </span>
-                </h4>
-              </div>
-            </div>
-            <div class="home-container19">
-              <div class="home-container20"></div>
-            </div>
-          </div>
-          <div class="home-divider1"></div>
-          <div class="home-container21">
-            <div class="home-container22">
-              <div class="home-container23"></div>
-            </div>
-            <div class="home-container24">
-              <h3 class="home-text32">Comprehensive Code Documentation</h3>
-              <div class="home-container25">
-                <h4 class="home-text33">
-                  <span class="HeadingThree">1.</span>
-                  <span>
-                    Automatically generate structured comments for a
-                    well-documented codebase, enhancing code clarity and
-                    maintainability.
-                  </span>
-                  <br />
-                </h4>
-              </div>
-              <div class="home-container26">
-                <h4 class="home-text37">
-                  <span class="HeadingThree">2.</span>
-                  <span>
-                    Simplify documentation tasks with HyprCodr's automatic
-                    README file generation.
-                  </span>
-                  <br />
-                </h4>
-              </div>
-              <div class="home-container27">
-                <h4 class="home-text41">
-                  <span class="HeadingThree">3.</span>
-                  <span>
-                    Gain invaluable insights into your code's functionality with
-                    line-by-line explanations.
-                  </span>
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div class="home-divider2"></div>
-          <div class="home-container28">
-            <div class="home-container29">
-              <h3 class="home-text44">
-                Streamlined Code Editing and Quality Enhancement
-              </h3>
-              <div class="home-container30">
-                <h4 class="home-text45">
-                  <span class="HeadingThree">1.</span>
-                  <span>
-                    Save time and eliminate the need to switch between windows
-                    by accessing extensive context directly within VSCode.
-                  </span>
-                </h4>
-              </div>
-              <div class="home-container31">
-                <h4 class="home-text48">
-                  <span class="HeadingThree">2.</span>
-                  <span>
-                    Select text and let HyprCodr improve code quality by adding
-                    comments, completing shortcuts, and helping you catch and
-                    rectify mistakes swiftly.
-                  </span>
-                </h4>
-              </div>
-              <div class="home-container32">
-                <h4 class="home-text51">
-                  <span class="HeadingThree">3.</span>
-                  <span>
-                    Accelerate your coding workflow and enhance code quality
-                    through HyprCodr's smart editing features.
-                  </span>
-                </h4>
-              </div>
-            </div>
-            <div class="home-container33">
-              <div class="home-container34"></div>
-            </div>
-          </div>
-        </section>
-        <section class="home-testimonials">
-          <div class="home-container35">
-            <div class="home-container36">
-              <div class="home-container37">
-                <h2 class="home-text54 HeadingOne">Work with us</h2>
-                <p class="home-text55 Lead">
-                  <span class="home-text56">
-                    Whatever your qualification is - we got you!
-                  </span>
-                </p>
-                <p class="home-text57 Body">
-                  <span class="home-text58">
-                    "Take up one idea. Make that one idea your life - think of
-                    it, dream of it, live on that idea. Let the brain, muscles,
-                    nerves, every part of your body, be full of that idea, and
-                    just leave every other idea alone. This is the way to
-                    success. A single rose can be my garden... a single friend,
-                    my world."
-                  </span>
-                </p>
-                <p class="home-text59">Mark Jojansen</p>
-                <p class="home-text60 Small">Project manager, Atlassian</p>
-                <div class="home-container38">
-                  <img
-                    alt="image"
-                    src="public/team-4-200h.jpg"
-                    class="home-image1"
-                  />
-                  <div class="home-container39"></div>
-                  <img
-                    alt="image"
-                    src="public/team-3-200h.jpg"
-                    class="home-image2"
-                  />
-                  <div class="home-container40"></div>
-                  <img
-                    alt="image"
-                    src="public/team-2-200h.jpg"
-                    class="home-image3"
-                  />
                 </div>
               </div>
+
             </div>
+            <img alt="image" src="public/wave-1.svg" class="profile-image1" />
+            <div class="profile-container18"></div>
           </div>
-          <img alt="image" src="public/waves-white.svg" class="home-image4" />
-        </section>
-        <h1 class="home-text61">Contact Us</h1>
-        <form method="POST" class="home-form">
-          <div class="home-container41">
-            <div class="home-column">
-              <input
-                type="text"
-                placeholder="John Smith"
-                target="name"
-                required=""
-                class="home-textinput input"
-              />
-              <div class="home-row">
-                <input
-                  type="email"
-                  placeholder="Email id"
-                  target="name"
-                  name="email"
-                  autocomplete="email"
-                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                  required=""
-                  class="home-textinput1 input"
-                />
-                <input
-                  type="tel"
-                  placeholder="Phone No."
-                  target="name"
-                  autocomplete="tel"
-                  class="home-textinput2 input"
-                />
-              </div>
-              <input
-                type="text"
-                placeholder="Your Message"
-                target=""
-                required=""
-                name="message"
-                class="home-textinput3 input"
-              />
-            </div>
+        </div>
+      </div>
+      <footer class="footer-footer footer-root-class-name">
+        <div class="footer-container">
+          <div class="footer-container1">
+            <img src="public/hyprcodr%20logo%20nobg-200h.png" alt="image" class="footer-image" />
+            <a href="https://neurobridge.tech" target="_blank" rel="noreferrer noopener" class="footer-link">
+              Copyright © 2023 HyprCodr by NeuroBridge Tech.
+            </a>
           </div>
-        </form>
-        <footer class="footer-footer footer-root-class-name">
-          <div class="footer-container">
-            <div class="footer-container1">
-              <img
-                src="public/hyprcodr%20logo%20nobg-200h.png"
-                alt="image"
-                class="footer-image"
-              />
-              <a
-                href="https://neurobridge.tech"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="footer-link"
-              >
-                Copyright © 2023 HyprCodr by NeuroBridge Tech.
+          <div class="footer-container2">
+            <div class="footer-container3">
+              <span class="footer-text Large">Company</span>
+              <a href="https://neurobridge.tech/about" target="_blank" rel="noreferrer noopener"
+                class="footer-link1 Large">
+                About Us
+              </a>
+              <a href="https://neurobridge.tech/about" target="_blank" rel="noreferrer noopener" class="footer-link2">
+                <span class="Large footer-text1">Blogs</span>
+                <br />
               </a>
             </div>
-            <div class="footer-container2">
-              <div class="footer-container3">
-                <span class="footer-text Large">Company</span>
-                <a
-                  href="https://neurobridge.tech/about"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="footer-link1 Large"
-                >
-                  About Us
-                </a>
-                <a
-                  href="https://neurobridge.tech/about"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="footer-link2"
-                >
-                  <span class="Large footer-text1">Blogs</span>
-                  <br />
-                </a>
-              </div>
-              <div class="footer-container4">
-                <span class="footer-text3 Large">Other Products</span>
-                <a
-                  href="https://minsky.app"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="footer-link3"
-                >
-                  Minsky
-                </a>
-              </div>
-              <div class="footer-container5">
-                <span class="footer-text4 Large">Socials&nbsp;</span>
-                <a
-                  href="https://in.linkedin.com/company/neurobridge-tech"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="footer-link4"
-                >
-                  Twitter
-                </a>
-                <a
-                  href="https://in.linkedin.com/company/neurobridge-tech"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="footer-link5 Large"
-                >
-                  Linkedin&nbsp;
-                </a>
-              </div>
+            <div class="footer-container4">
+              <span class="footer-text3 Large">Other Products</span>
+              <a href="https://minsky.app" target="_blank" rel="noreferrer noopener" class="footer-link3">
+                Minsky
+              </a>
+            </div>
+            <div class="footer-container5">
+              <span class="footer-text4 Large">Socials&nbsp;</span>
+              <a href="https://in.linkedin.com/company/neurobridge-tech" target="_blank" rel="noreferrer noopener"
+                class="footer-link4">
+                Twitter
+              </a>
+              <a href="https://in.linkedin.com/company/neurobridge-tech" target="_blank" rel="noreferrer noopener"
+                class="footer-link5 Large">
+                Linkedin&nbsp;
+              </a>
             </div>
           </div>
-          <img alt="image" src="public/waves-white.svg" class="footer-image1" />
-        </footer>
-      </div>
+        </div>
+        <img alt="image" src="public/waves-white.svg" class="footer-image1" />
+      </footer>
     </div>
-    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
-  </body>
+  </div>
+  <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+</body>
+
 </html>

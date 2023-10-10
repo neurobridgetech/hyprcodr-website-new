@@ -6,6 +6,7 @@
             <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
         </filter>
     </defs>
+    
     <g id="Artboard-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.251135538">
         <g filter="url(#filter-1)" id="dark-copy">
             <g transform="translate(-216.000000, -124.000000)">

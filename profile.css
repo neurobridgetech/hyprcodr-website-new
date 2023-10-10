@@ -215,13 +215,14 @@
 }
 
 .primary-blue-button-container {
+  padding-top: 2%;
   display: flex;
   position: relative;
 }
 .primary-blue-button-button {
   color: var(--dl-color-gray-white);
   outline: none;
-  background: linear-gradient(310deg,#2152ff,#21d4fd);
+  background: linear-gradient(310deg,#f57832,#f57832);
   box-shadow: 0 4px 7px -1px rgb(0 0 0 / 11%), 0 2px 4px -1px rgb(0 0 0 / 7%);
   transition: all .15s ease-in;
   padding-top: var(--dl-space-space-triplequarterunit);
@@ -821,7 +822,7 @@
   height: 100%;
   opacity: 0.9;
   position: absolute;
-  background-image: linear-gradient(310deg,#2152ff,#21d4fd);
+  background-image: linear-gradient(310deg,#894cff ,#f57832);
 }
 @media(max-width: 991px) {
   .profile-container01 {
@@ -844,6 +845,7 @@
   }
   .profile-image1 {
     display: none;
+    color: #0b0d19;
   }
 }
 @media(max-width: 767px) {
