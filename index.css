@@ -243,7 +243,7 @@
 }
 .outline-gray-button-button {
   color: var(--dl-color-secondary-200);
-  outlinr: none;
+  outline: none;
   transition: all .15s ease-in;
   padding-top: var(--dl-space-space-triplequarterunit);
   border-color: var(--dl-color-secondary-200);
@@ -605,6 +605,7 @@
   align-items: center;
   flex-direction: column;
   background-color: #0b0d19;
+  padding-bottom: var(--dl-space-space-sixunits);
 }
 .home-container06 {
   flex: 0 0 auto;
@@ -654,15 +655,17 @@
 .home-container08 {
   display: flex;
   position: relative;
+  height: 420px;
+  width: 300px;
   box-shadow: 0 8px 26px -4px hsla(0,0%,8%,.15),0 8px 9px -5px hsla(0,0%,8%,.06)!important;
   transition: 0.3s;
-  align-items: center;
+  /* align-items: center;
   padding-top: var(--dl-space-space-sixunits);
   padding-left: var(--dl-space-space-sixunits);
-  border-radius: var(--dl-radius-radius-radius1);
-  padding-right: var(--dl-space-space-sixunits);
-  flex-direction: column;
   padding-bottom: var(--dl-space-space-doubleunit);
+  padding-right: var(--dl-space-space-sixunits); */
+  border-radius: var(--dl-radius-radius-radius1);
+  flex-direction: column;
   background-size: cover;
   justify-content: center;
   background-position: center;
