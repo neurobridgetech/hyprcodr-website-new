@@ -42,10 +42,12 @@
   --dl-space-space-unitandahalfunit: 1.5rem;
   --dl-space-space-triplequarterunit: 0.75rem;
 }
+
 .teleport-show {
   display: flex !important;
   transform: none !important;
 }
+
 .button {
   color: var(--dl-color-secondary-400);
   display: inline-block;
@@ -56,6 +58,7 @@
   border-radius: 4px;
   background-color: var(--dl-color-gray-white);
 }
+
 .list {
   width: 100%;
   margin: 1em 0px 1em 0px;
@@ -64,9 +67,11 @@
   list-style-type: none;
   list-style-position: outside;
 }
+
 .list-item {
   display: list-item;
 }
+
 .textarea {
   color: var(--dl-color-secondary-400);
   cursor: auto;
@@ -77,6 +82,7 @@
   border-radius: 4px;
   background-color: var(--dl-color-gray-white);
 }
+
 .input {
   color: var(--dl-color-secondary-400);
   cursor: auto;
@@ -87,6 +93,7 @@
   border-radius: 4px;
   background-color: var(--dl-color-gray-white);
 }
+
 .Small {
   font-size: 0.875rem;
   font-family: Open Sans;
@@ -95,6 +102,7 @@
   text-transform: none;
   text-decoration: none;
 }
+
 .Large {
   font-size: 0.875rem;
   font-family: Open Sans;
@@ -103,6 +111,7 @@
   text-transform: none;
   text-decoration: none;
 }
+
 .Medium {
   font-size: 1.125rem;
   font-family: Open Sans;
@@ -111,6 +120,7 @@
   text-transform: none;
   text-decoration: none;
 }
+
 .Body {
   font-size: 1rem;
   font-family: Open Sans;
@@ -119,6 +129,7 @@
   text-transform: none;
   text-decoration: none;
 }
+
 .HeadingOne {
   font-size: 2.25rem;
   font-family: Open Sans;
@@ -127,6 +138,7 @@
   text-transform: none;
   text-decoration: none;
 }
+
 .HeadingTwo {
   font-size: 1.875rem;
   font-family: Open Sans;
@@ -135,6 +147,7 @@
   text-transform: none;
   text-decoration: none;
 }
+
 .Lead {
   font-size: 1.25rem;
   font-family: Open Sans;
@@ -143,6 +156,7 @@
   text-transform: none;
   text-decoration: none;
 }
+
 .HeadingThree {
   font-size: 1.25rem;
   font-family: Open Sans;
@@ -151,6 +165,7 @@
   text-transform: none;
   text-decoration: none;
 }
+
 .Label {
   font-size: 0.75rem;
   font-family: Open Sans;
@@ -159,6 +174,7 @@
   text-transform: none;
   text-decoration: none;
 }
+
 .ButtonSmall {
   font-size: 0.75rem;
   font-style: normal;
@@ -168,6 +184,7 @@
   letter-spacing: -0.025rem;
   text-transform: uppercase;
 }
+
 .Major {
   font-size: 1rem;
   font-family: Open Sans;
