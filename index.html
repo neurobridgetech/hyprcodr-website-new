@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KC316GE7XS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KC316GE7XS');
+  </script>
   <title>HyprCodr</title>
   <meta property="og:title" content="HyprCodr" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -142,10 +151,9 @@
           <a href="index.html" class="header-navlink Large"><img src="public/hyprcodr%20logo%20nobg-200h.png"
               alt="image" style="height:5vh" /></a>
           <div class="header-menu">
-            <a href="index.html" class="header-navlink1 Large">Home</a>
-            <a href="profile.html" class="header-navlink2 Large">Features</a>
-            <a href="index.html" class="header-navlink3 Large">Contact us</a>
-            </a>
+            <a href="#features-section" class="header-navlink1 Large">Features</a>
+            <a href="#why-us-section" class="header-navlink2 Large">Why HyprCodr</a>
+            <a href="#contact-us" class="header-navlink3 Large">Contact us</a>
           </div>
           <div class="header-container1">
             <div class="header-container2">
@@ -177,11 +185,9 @@
         </div>
         <div class="header-mid">
           <div class="header-menu1">
-            <a href="index.html" class="header-navlink5 Large">Home</a>
-            <a href="profile.html" class="header-navlink6 Large">Profile</a>
-            <a href="coming-soon.html" class="header-navlink7 Large">
-              Contact us
-            </a>
+            <a href="#features-section" class="header-navlink1 Large">Features</a>
+            <a href="#why-us-section" class="header-navlink2 Large">Why HyprCodr</a>
+            <a href="#contact-us" class="header-navlink3 Large">Contact us</a>
           </div>
         </div>
         <div class="header-bot">
@@ -264,7 +270,7 @@
 
 
 
-    <section class="home-container04">
+    <section id="features-section" class="home-container04">
       <div class="home-container05">
         <div class="home-container06">
           <svg viewBox="0 0 1024 1024" class="home-icon">
@@ -458,7 +464,7 @@
     </section>
 
 
-    <div class="home-divider1"></div>
+    <div id="why-us-section" class="home-divider1"></div>
 
 
 
@@ -486,28 +492,28 @@
                   <tbody>
                     <tr>
                       <td data-label="Product">Code Generation</td>
-                      <td class="hyprcodr-col data-label="HyprCodr">&#10003;</td>
+                      <td class="hyprcodr-col data-label=" HyprCodr">&#10003;</td>
                       <td data-label="Github CoPilot">&#10003;</td>
                       <td data-label="TabNine">&#10003;</td>
                     </tr>
                     <tr>
-                      <td data-label="Product">LLM Powered Chatting</td>                      
-                      <td class="hyprcodr-col data-label="HyprCodr">&#10003;</td>
+                      <td data-label="Product">LLM Powered Chatting</td>
+                      <td class="hyprcodr-col data-label=" HyprCodr">&#10003;</td>
                       <td data-label="Github CoPilot">&#10007;</td>
                       <td data-label="TabNine">&#10003;</td>
                     </tr>
                     <tr>
                       <td data-label="Product">Multiple context providers</td>
-                      
-                      <td class="hyprcodr-col data-label="HyprCodr">&#10003;</td>
+
+                      <td class="hyprcodr-col data-label=" HyprCodr">&#10003;</td>
                       <td data-label="Github CoPilot">&#10007;</td>
                       <td data-label="TabNine">&#10007;</td>
                     </tr>
                     <tr>
                       <td data-label="Product">One-Click Documentation</td>
-                      
-                      <td class="hyprcodr-col data-label="HyprCodr">&#10003;</td>
-                      <td data-label="Github CoPilot">&#10007;</td>                
+
+                      <td class="hyprcodr-col data-label=" HyprCodr">&#10003;</td>
+                      <td data-label="Github CoPilot">&#10007;</td>
                       <td data-label="TabNine">&#10007;</td>
                     </tr>
                   </tbody>
@@ -526,7 +532,8 @@
 
 
     <link href="./profile.css" rel="stylesheet" />
-    <div class="profile-contact">
+
+    <div id="contact-us" class="profile-contact">
       <div class="profile-container09">
         <div class="profile-form">
           <h2 class="profile-text18 HeadingOne"><span>Say Hi!</span></h2>
@@ -645,5 +652,6 @@
   </div>
   <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
 </body>
+<script src="script.js"></script>
 
 </html>

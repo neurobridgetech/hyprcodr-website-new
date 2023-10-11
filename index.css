@@ -164,7 +164,20 @@
   position: absolute;
   align-items: flex-start;
   flex-direction: column;
-  background-color: var(--dl-color-gray-white)
+  background-color: var(--dl-color-gray-white) ;
+  /* Make it fixed to slide over content */
+  right: -100%;
+  /* Start off the screen to the right */
+  /* Take up full width */
+  transition: transform 0.3s ease;
+  /* Add transition for smooth sliding */
+
+
+}
+
+.header-mobile-menu.open {
+  display: block; 
+  transform: translateX(-100%);
 }
 
 .header-top {
